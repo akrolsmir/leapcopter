@@ -1,95 +1,115 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>LeapCopter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <title>LeapCopter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
+  <!-- Le styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <style>
+  body {
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+  }
 
 
-    </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  </style>
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
-  </head>
+      <!-- Fav and touch icons -->
+      <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    </head>
 
-  <body>
+    <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">LeapCopter</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">  
-              <li><a href="#the-hack">The Hack</a></li>
-              <li><a href="#our-team">Our Team</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">LeapCopter</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">  
+                <li><a href="#the-hack">The Hack</a></li>
+                <li><a href="#our-team">Our Team</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
-    </div>
+
+      <div class="container">
+        <div class="hero-unit">
+          <h1>Introducing the LeapCopter!</h1>
+          <p>An RC helicopter controlled by hand gestures. <a href="https://github.com/akrolsmir/leapcopter">Open source.</a></p>
+        </div>
+
+        <img src="4.jpg" class="img-rounded"/>
+
+        <section id="the-hack">
+          <div class="row">
+
+            <div class="span6">
+              <div class="page-header">
+                <h2 class="media-heading">Promo Video</h2>
+                <p><video class="media-object" width="480" height="360" controls="controls" type="video/ogg" src="LeapCopter.ogg"/></p>
+              </div>
+            </div>
 
 
-    <div class="container">
-      <div class="hero-unit">
-        <h1>Introducing the LeapCopter!</h1>
-        <p>An RC helicopter controlled by hand gestures. <a href="https://github.com/akrolsmir/leapcopter">Open source.</a></p>
-      </div>
+            <div class="span6">
+              <div class="page-header">
+                <h2>The Hack</h2>
+                <p>
+                  <ol>
+                    <p><li>Get a copy of <a href="https://leapmotion.com/">Leap Motion's The Leap</a>. (Or four.)</li></p>
+                    <p><li>Impulsively run out and buy an RC helicopter.</li></p>
+                    <p><li>Disassemble the RC controller and expose the potentiometers.</li></p>
+                    <p><li>Mechanically attach (aka superglue) servomotors to the potentiometers.</li></p>
+                    <p><li>Wire up an Arduino to the servomotors.</li></p>
+                    <p><li>Communicate between The Leap and the Arduino with Python.</li></p>
+                    <p><li><i>(In progress)</i> Weaponize >:)</li></p>
+                  </ol>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <img src="4.jpg" class="img-rounded"/>
+        <div class="row">
+          <div class="span9">
+            <section id="our-team">
+              <div class="page-header">
+                <h2>Our Team</h2> is composed of the following four freshmen:
+                <p>
+                  <ul>
+                    <h4>Austin Chen</h4>
+                    <h4>Casey Duckering</h4>
+                    <h4>Evan Ye</h4>
+                    <h4>Nitin Sadras</h4>
+                  </ul>
 
-    <section id="the-hack">
-      <div class="page-header">
-        <h2>The Hack</h2>
-        <p>
-          <ol>
-          <p><li>Get a copy of <a href="https://leapmotion.com/">Leap Motion's The Leap</a>. (Or four.)</li></p>
-          <p><li>Impulsively run out and buy an RC helicopter.</li></p>
-          <p><li>Disassemble the RC controller and expose the potentiometers.</li></p>
-          <p><li>Mechanically attach (aka superglue) servomotors to the potentiometers.</li></p>
-          <p><li>Wire up an Arduino to the servomotors.</li></p>
-          <p><li>Communicate between The Leap and the Arduino with Python.</li></p>
-          <p><li><i>(In progress)</i> Weaponize >:D</li></p>
-          </ol>
-        </p>
-      </div>
-    </section>
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="span3">
+            <h3>Sponsored by:</h3>
+            <img src="hack.jpg"/>
+          </div>
 
-    <section id="our-team">
-      <div class="page-header">
-        <h2>Our Team</h2> is composed of the following four freshmen:
-        <p>
-        <ul>
-          <p>Austin Chen</p>
-          <p>Casey Duckering</p>
-          <p>Evan Ye</p>
-          <p>Nitin Sadras</p>
-        </ul>
-      </div>
-      </p>
-    </section>
-
-    </div> <!-- /container -->
+        </div> <!-- /container -->
 
     <!-- Le javascript
     ================================================== -->
@@ -98,4 +118,4 @@
     <script src="js/bootstrap.js"></script>
 
   </body>
-</html>
+  </html>
