@@ -14,7 +14,17 @@
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
-    </style>
+      a.cssmouseover {
+        display:block;
+        width:1602px;
+        height:1220px;
+        background-image:url(7.jpg);
+        background-position:-1602px 0px;
+      }
+      a.cssmouseover:hover {
+        background-position:0px 0px;
+      }
+      </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -54,19 +64,21 @@
         <p>An RC helicopter controlled by hand gestures. <a href="https://github.com/akrolsmir/leapcopter">Open source.</a></p>
       </div>
 
-      <a><img src="4.jpg" onmouseover="this.src='5.jpg'" onmouseout="this.src='4.jpg'"/></a>
+    <a class="cssmouseover"></a>
 
     <section id="the-hack">
       <div class="page-header">
         <h2>The Hack</h2>
         <p>
           <ol>
-          <p><li>Get a copy of <a href="https://leapmotion.com/">Leap Motion's The Leap</a>. Or four.</li></p>
+          <p><li>Get a copy of <a href="https://leapmotion.com/">Leap Motion's The Leap</a>. (Or four.)</li></p>
           <p><li>Impulsively run out and buy an RC helicopter.</li></p>
           <p><li>Disassemble the RC controller and expose the potentiometers.</li></p>
           <p><li>Mechanically attach (aka superglue) servomotors to the potentiometers.</li></p>
           <p><li>Wire up an Arduino to the servomotors.</li></p>
-          <p><li>Pass signals between The Leap and the Arduino in Python.</li></p></ol>
+          <p><li>Communicate between The Leap and the Arduino with Python.</li></p>
+          <p><li><i>(In progress)</i> Weaponize >:D</li></p>
+          </ol>
         </p>
       </div>
     </section>
