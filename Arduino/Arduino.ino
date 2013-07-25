@@ -65,10 +65,12 @@ void serialEvent() {
           c = 135-c*135/255;
           break;
         case 1:
-          c = 64+c/2;
+//          c = 64+c/2;
+          c = 90 + (c - 122) * 3 / 2;
           break;
         case 2:
-          c = 192-c/2;
+//          c = 192-c/2;
+          c = 90 + (c - 122) * 3 / 2;
           break;
         default:break;
       }
